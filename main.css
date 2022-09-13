@@ -35,7 +35,7 @@ body {
 /* start card */
 .price-card {
   position: relative;
-  width: 35%;
+  width: 40%;
   background-color: #fff;
   margin: -80px auto;
   padding: 25px 0;
@@ -218,15 +218,21 @@ hr {
     width: 70%;
   }
   .price-card .swipper {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .price-card {
-    width: 40%;
+    width: 60%;
   }
   .price-card .swipper {
     justify-content: flex-start;
+  }
+}
+@media (max-width: 410px) {
+  .price-card .swipper .year::after {
+    transform: rotate(-90deg);
+    top: -22%;
   }
 }
